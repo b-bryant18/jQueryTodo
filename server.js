@@ -18,10 +18,12 @@ const todos = [
 
 ];
 
-app.listen(PORT, () => {
     // Use this line to create routes for all files inside the public folder(top level folder).
     //  No need to make routes for every file
     app.use(express.static("public"))
+    app.use(express.urlencoded({ extended: true}));
+    app.use(express.json());
+
     app.get("/", (req, res) => {
         res.sendFile(path.join(__dirname, "public/index.html"));
     })
@@ -30,6 +32,13 @@ app.listen(PORT, () => {
         res.json(todos);
     })
 
+    app.post("/api/todos", (req,res) => {
+        console.log(req.body);
+        todos.push(req.body);
+        res.send(200);
+    });
+
+    app.listen(PORT, () => {
     console.log("Server started at http://localhost:" + PORT);
 });
 
