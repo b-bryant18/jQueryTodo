@@ -3,7 +3,7 @@ const todolistUl = $("#todolist");
 const newTodoInput = $("#new-todo");
 const newTodoButton = $("#save");
 
-// 
+// Goes through each todo and appends a new list element to the page inside of todoListUl
 function renderTodos(data) {
     todolistUl.empty();
     data.forEach(todo => {
@@ -16,6 +16,7 @@ function renderTodos(data) {
 // data and todo can be called any other name here. They're arbitrary.
 $.get("/api/todos").then(data => {
     console.log(data);
+    // Call the renderTodos function again otherwise refreshing will clear all todos
     renderTodos(data);
 })
 
