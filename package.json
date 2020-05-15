@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/b-bryant18/CorpKarma/issues"
+    "url": "https://github.com/b-bryant18/jQueryToDo"
   },
-  "homepage": "https://github.com/b-bryant18/jQueryTodo/",
+  "homepage": "https://github.com/b-bryant18/jQueryTodo",
   "dependencies": {
     "express": "^4.17.1"
   }
