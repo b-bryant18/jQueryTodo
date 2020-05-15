@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/b-bryant18/CorpKarma/issues"
   },
-  "homepage": "https://github.com/b-bryant18/CorpKarma#readme",
+  "homepage": "https://github.com/b-bryant18/jQueryTodo/",
   "dependencies": {
     "express": "^4.17.1"
   }

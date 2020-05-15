@@ -31,6 +31,9 @@ newTodoButton.click(e => {
         text: userText,
         done: false
     };
+    
+    // Post newTodo object to array, then get the newly updated array,
+    //  and run the renderTodos function to append all todos to the page
     $.post("/api/todos", newTodo).then(() => {
         $.get("/api/todos").then(data => {
             console.log(data);
