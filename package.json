@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/b-bryant18/jQueryTodo/",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
